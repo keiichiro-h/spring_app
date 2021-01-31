@@ -1,13 +1,14 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <%= link_to "Spring", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "ホーム", root_path %></li>
-            <li><%= link_to "Springについて", about_path %></li>
-            <li><%= link_to "コース一覧", '#' %></li>
-            <li><%= link_to "ログイン", '#' %></li>
-          </ul>
-        </nav>
-    </div>
+<header>
+<div class="container">
+  <div class="header-left">
+    <p class="logo"> Spring <p>
+  </div>
+  <div class="header-right">
+    <a href="#">ホーム</a>
+    <a href="#">コース紹介</a>
+    <a href="#">受講料/クラス日程</a>
+    <a href="#">よくある質問</a>
+    <a href="#" class="login">ログイン</a>
+  </div>
+</div>
 </header>

@@ -1,10 +1,57 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Spring</h1>
+<% provide(:title, "Home") %>
 
-  <h2>
-    はるちゃんの英単語教室にようこそ！
-  </h2>
+<div class="top-wrapper">
+    <div class="container top-container">
+        <h1>英単語専門オンラインスクール</h1>
+        <h2>Spring</h2>
+        <p>【単語】単語記憶に特化したスクール</p>
+        <p>【毎朝】レッスンは毎朝15分</p>
+    </div>
+</div>
 
-  <%= link_to "登録する", signup_path, class: "btn btn-lg btn-primary" %>
+<div class="explanation-wrapper">
+    <div class="message-wrapper">
+        <h1 class="message">Springは、単語習得と学習習慣の定着に特化したオンライン学習塾です。</h1>
+    </div>
+    <div class="feature-wrapper">
+        <h1>Spring 三つの特徴</h1>
+        <div class="feature">
+            <div class="feature-icon">
+                <%= image_tag("feature_1.png") %>
+                <div class="feature-contents">
+                    <p>記憶のメカニズムを</p>
+                    <p>意識したクラス構成</p>
+                </div>
+            </div>
+            <p class="text-contents">
+            単語学習に必要なのは、アウトプットと印象的な記憶方法。強制的に毎朝アウトプットの機会を作り、クラスメイトと成果や記憶方法のシェアを行うことで効率的に記憶を定着させます。            
+            </p>
+        </div>
+        
+        <div class="feature">
+            <div class="feature-icon">
+                <%= image_tag("feature_2.png") %>
+                <div class="feature-contents">
+                    <p>単語を記憶しなければ</p>
+                    <p>ならない環境の徹底</p>
+                </div>
+            </div>
+            <p class="text-contents">
+            オンラインだからできる朝のグループレッスン。クラスメイトへの勉強開始を通知。レッスンでは毎回テスト結果をクラス内で公開。
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">
+                <%= image_tag("feature_3.png") %>
+                <div class="feature-contents">
+                    <p>顔出し不要</p>
+                </div>
+            </div>
+            <p class="text-contents">
+            　すっぴん、寝癖でも大丈夫！授業中はアバターで参加OK！（手元の映像でもOK！）ニックネームでの受講可能！
+            </p>
+        </div>
+    </div>
 </div>
 
