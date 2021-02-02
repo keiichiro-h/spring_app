@@ -59,6 +59,32 @@
     color: white;
   }
 
+     /* フッター */
+
+ .footer-right {
+     margin-top:25px;
+     margin-right:25px;
+     float: right;
+ }
+
+ .footer-left {
+    float: left;
+    width: 200px;
+ }
+
+ .footer-logo {
+     color: rgba(20, 9, 126, 0.9);
+     font-weight: bold;
+     font-size: 30px;
+     width: 200px;
+ }
+
+ .biography{
+     color: #b3aeb5;
+     width: 200px;
+ }
+
+
      /* ホーム */
 
  .top-wrapper {
@@ -87,6 +113,15 @@
     color: black;
   }
 
+  .explanation-wrapper{
+      height: 600px;
+      border-bottom: 1px solid #eee;
+  }
+
+  .clear{
+      clear: left;
+  }
+
   .message-wrapper {
       border-bottom: 1px solid #eee;
   }
@@ -105,31 +140,38 @@
   .feature {
     float: left;
     width: 33%;
-    padding: 0 auto;
+    text-align: center;
   }
 
   .feature-icon {
-    padding-left: 50px;
+    width: 100%;
     position: relative;
   }
 
-  .feature-icon p {
-    color: white;
+  .icon-image {
+    width: 250px;
+    margin: 0 auto;
   }
 
-  .feature-contents{
+  .feature-icon p {
+    font-size: 20px;
+    color: white;
     position: absolute;
-    top: 27%;
-    width: 100%;
-    margin-left: 30px;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    height: 30%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-  
 
   .text-contents {
     width: 80%;
     display: inline-block;
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 16px;
     color: #b3aeb5;
     text-align: center;
   }
