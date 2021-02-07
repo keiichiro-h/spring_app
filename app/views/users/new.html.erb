@@ -1,3 +1,29 @@
 <% provide(:title, 'Sign up') %>
-<h1>新規登録</h1>
-<p>新規登録用のページ</p>
+  
+<div class="signup-wrapper">
+    <div class="signup-body">
+        <div class="form-heading">新規ユーザー登録</div>
+            <div class="form-body">
+                <%= form_with(model: @user, local: true) do |f| %>
+                <%= render 'shared/error_messages' %>
+
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+        
+                <%= f.label :email %>
+                <%= f.email_field :email %>
+        
+                <%= f.label :password %>
+                <%= f.password_field :password %>
+        
+                <%= f.label :password_confirmation, "Confirmation" %>
+                <%= f.password_field :password_confirmation %>
+        
+                    <div class="submit-button">
+                    <%= f.submit "Create my account" %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    <div class="clear"></div>
+</div>
